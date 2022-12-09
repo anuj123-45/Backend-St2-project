@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+       body {
+        background-image: url("https://w0.peakpx.com/wallpaper/30/0/HD-wallpaper-lightspeed-background-vector.jpg");
+        background-color: #cccccc;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+</style>
+<body>
+    <table border="9" style="margin:auto;margin-top: 100px;" cellspacing="8" cellpadding="10">
+       <Caption style="color:rgb(25, 11, 184);font-size: 30px;font-weight:bolder;">User Records</Caption>
+        <tr>
+            <th>Id</th>
+            <th>Username</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Phone no</th>
+         
+            
+        </tr>
+        <%
+        for(var i=0;i<result.length;i++)
+        { %>
+     <tr>
+        <td><%= result[i].id %></td>
+        <td><%= result[i].username %></td>
+        <td><%= result[i].fname %></td>
+        <td><%= result[i].gender %></td>
+        <td><%= result[i].pno %></td>
+
+       
+            
+    </tr>
+        <%}
+        %>
+    </table>
+    
+</body>
+</html>

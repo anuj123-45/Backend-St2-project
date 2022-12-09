@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <style>
+      div{
+        font-size:30px;
+      }
+      body {
+        background-image: url("https://w0.peakpx.com/wallpaper/30/0/HD-wallpaper-lightspeed-background-vector.jpg");
+        background-color: #cccccc;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="nav-link" href="/reset?id=<%= results[0].id %>"
+      >Settings</a
+    >
+    <h1 style="text-align:center">User Profile</h1>
+  <div style="border:5px solid black;width:500px;margin-left:450px">
+    <div>Your username : <b><%= results[0].username %></b></div>
+    <div>Your Name   :   <b> <%= results[0].fname %></b></div>
+    <div>Your Gender : <b><%= results[0].gender %></b></div>
+    <div>Your Phone no : <b><%= results[0].pno %></b></div> 
+  </div>
+  </body>
+</html>
